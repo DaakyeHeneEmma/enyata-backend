@@ -20,8 +20,8 @@ weather.get('/', async(_, res)=>{
         }
     })
 
-    //insert User
-weather.post('/isertUser', async(request, response)=>{
+    //insert weather
+weather.post('/isertWeather', async(request, response)=>{
   const app = await (await fetch(api)).json();
   let client_id = app.weather[0].id
   let incident_desc = app.main
@@ -43,8 +43,8 @@ weather.post('/isertUser', async(request, response)=>{
         }
     })
 
-    //get all user data
-weather.get('/getAllUsers', async(_,response)=>{
+    //get all weather data
+weather.get('/getAllWeather', async(_,response)=>{
         try {
           model.query('select * from incidents ', (error,results)=>
           {
@@ -58,7 +58,7 @@ weather.get('/getAllUsers', async(_,response)=>{
         }
     })
   
-weather.get('/getUserById/:id', async(req, response)=>{ 
+weather.get('/getWeatherById/:id', async(req, response)=>{ 
   const id = req.params.id;
   try {
     model.query('select * from incidents where id = $1', [id], (error,results)=>
