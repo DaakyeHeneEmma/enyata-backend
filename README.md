@@ -1,5 +1,16 @@
 # enyata-backend
 
+# IN THE .ENV SET 
+LATI = your lattitude
+LONG = your prefered or test longitute
+DB_HOST = localhost
+DB_USER = your database username
+DB_PASSWORD = your database password
+DB_PORT = the database port
+DB_NAME = your database name
+OPEN_WEATHER_API_KEY = api keys from open weather 
+
+
 # The required working flow:
 
     A POST endpoint that receives the incident report.

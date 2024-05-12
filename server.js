@@ -4,7 +4,7 @@ import * as dotenv from 'dotenv';
 dotenv.config()
 
 const {log} = console;
-const server = express();
+export const server = express();
 const port = process.env.PORT || 3000;
 
 server.get("/", (req, res)=>{
@@ -14,5 +14,3 @@ server.use("/api/v1", weather)
 
 server.listen(port, 
     ()=>log(`weather api server started on ${port}`))
-
-    export default server;

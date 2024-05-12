@@ -1,12 +1,15 @@
 import pkg from 'pg';
 const {Pool, Client} = pkg;
+import dotenv from 'dotenv';
+
+dotenv.config()
 
 export const model = new Pool({
-    host: "localhost",
-    user: "postgres",
-    port: 5432,
-    password: "enyata",
-    database: "postgres"
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER, 
+    port: process.env.DB_PORT,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_NAME
 })
 
 export default model
