@@ -6,7 +6,7 @@ import model from "../../model/model.js"
 // const location = global.navigator.geolocation.getCurrentPosition(successCallback,errorCallback,{timeout:10000})
 // const lon = process.env.LONG //await location.coords.latitude;
 // const lat = process.env.LATI  //await location.coords.longitude;
-const api = `https://api.openweathermap.org/data/2.5/weather?lat=${process.env.LATI}&lon=${process.env.LONG}&appid=${process.env.API_KEY}`
+const api = `https://api.openweathermap.org/data/2.5/weather?lat=${process.env.LATI}&lon=${process.env.LONG}&appid=${process.env.OPEN_WEATHER_API_KEY}`
 export const weather = Router();
 
 

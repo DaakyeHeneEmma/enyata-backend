@@ -14,3 +14,5 @@ server.use("/api/v1", weather)
 
 server.listen(port, 
     ()=>log(`weather api server started on ${port}`))
+
+    export default server;
