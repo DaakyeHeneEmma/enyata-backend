@@ -1,12 +1,26 @@
 {
   "name": "enyata-backend",
   "version": "1.0.0",
+  "type": "module",
   "description": "# The required working flow:",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon server",
+    "start": "node server"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "Emmanuel Arthur",
+  "keywords": [
+    "\"Incident",
+    "reporting\""
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.8",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mocha": "^10.4.0",
+    "node-fetch": "^3.3.2",
+    "pg": "^8.11.5",
+    "postgres": "^3.4.4"
+  }
 }
